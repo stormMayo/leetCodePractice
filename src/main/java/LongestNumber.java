@@ -5,24 +5,26 @@ import java.util.Set;
  * Given a string, find the length of the longest substring without repeating characters.
  */
 public class LongestNumber {
-    public int lengthOfLongestSubstring(String s) {
-        for(int i= 0 ; i < s.length() ; i++){
-            s.charAt(i);
-        }
-        //TDDO
-        return 0;
+    public static void main(String[] argus){
+        String s = "abcdcba";
+        int i = lengthOfLongestSubstring(s);
+        System.out.println(i);
     }
-    private boolean allUnique(String s, int start,int end){
+    private static int lengthOfLongestSubstring(String s) {
+        int n = s.length();
         Set<Character> set = new HashSet<Character>();
-        for(int i = start ; i < end ; i++){
-            Character ch = s.charAt(i);
-            if(set.contains(ch)){
-                return false;
+        int ans = 0, i = 0, j = 0;
+        while (i < n && j < n) {
+            // try to extend the range [i, j]
+            if (!set.contains(s.charAt(j))){
+                set.add(s.charAt(j++));
+                ans = Math.max(ans, j - i);
             }
-            set.add(ch);
+            else {
+                set.remove(s.charAt(i++));
+            }
         }
-        return true;
+        return ans;
+
     }
-
-
 }

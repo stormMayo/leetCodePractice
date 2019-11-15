@@ -6,6 +6,7 @@ public class QuickUnionWithWeighted {
         sz = new int[N];
         for(int i = 0 ; i < id.length ; i++){
             id[i] = i;
+            sz[i] = 1;
         }
     }
 
