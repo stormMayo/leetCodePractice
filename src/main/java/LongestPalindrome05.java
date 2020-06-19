@@ -5,7 +5,7 @@
  */
 public class LongestPalindrome05 {
     public static void main(String[] argus){
-        String s = "cbaabcad";
+        String s = "cbbd";
         String s1 = longestPalindrome(s);
         System.out.println(s1);
 
@@ -26,7 +26,7 @@ public class LongestPalindrome05 {
                 }
             }
         }
-        return s.substring(beginIndex, maxLen);
+        return s.substring(beginIndex, beginIndex + maxLen);
     }
 
     //检查当前是否回文
