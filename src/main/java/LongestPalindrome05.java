@@ -10,6 +10,7 @@ public class LongestPalindrome05 {
         System.out.println(s1);
 
     }
+//    solution One:
     public static String longestPalindrome(String s) {
         int length = s.length();
         if(length < 2){
