@@ -1,3 +1,5 @@
+package leetcode;
+
 public class QuickFind {
     private  int[] id;
 

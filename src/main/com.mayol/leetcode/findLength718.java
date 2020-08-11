@@ -1,3 +1,5 @@
+package leetcode;
+
 import sun.applet.Main;
 
 /**

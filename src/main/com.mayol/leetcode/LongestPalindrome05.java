@@ -1,3 +1,5 @@
+package leetcode;
+
 /**
  * @author mayol
  * @date 2020/6/19 10:55
