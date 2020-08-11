@@ -2,8 +2,6 @@ package algorithm.list;
 
 import org.omg.CORBA.Object;
 
-import java.text.DecimalFormat;
-
 /**
  * TODO
  *
