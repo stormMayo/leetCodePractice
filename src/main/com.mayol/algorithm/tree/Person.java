@@ -26,7 +26,7 @@ public class Person implements Comparable<Person> {
 //		if (age > e.age) return 1;
 //		if (age < e.age) return -1;
 //		return 0;
-		return age - e.age;
+		return this.age - e.age;
 	}
 	
 	@Override
