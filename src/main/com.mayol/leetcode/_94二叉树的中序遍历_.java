@@ -28,12 +28,12 @@ public class _94二叉树的中序遍历_ {
 
     //迭代
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         if(root == null){
             return result;
         }
         TreeNode currentNode = root;
-        stack.push(root);
         while (currentNode != null || !stack.isEmpty()){
             while (currentNode != null){
                 stack.push(currentNode);
@@ -43,9 +43,6 @@ public class _94二叉树的中序遍历_ {
             result.add(currentNode.val);
             currentNode = currentNode.right;
         }
-
-
-
         return result;
     }
 
