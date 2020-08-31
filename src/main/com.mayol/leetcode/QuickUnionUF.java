@@ -1,3 +1,5 @@
+package leetcode;
+
 public class QuickUnionUF {
     private int[] id;
     public QuickUnionUF(int N){

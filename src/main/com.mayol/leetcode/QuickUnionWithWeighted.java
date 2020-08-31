@@ -1,3 +1,5 @@
+package leetcode;
+
 public class QuickUnionWithWeighted {
     private int[] id;
     private int[] sz;
